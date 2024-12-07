@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJUS Developers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-toggle">
+    <button onclick="toggleSidebar()">☰</button>
+</div>
+
+   <!-- Sidebar Section -->
+<div class="sidebar">
+    <div class="sidebar-logo">
+        <img src="OIP.jpg" alt="Company Logo" class="logo">
+    </div>
+
+    <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#Specialties"><i class="fas fa-briefcase"></i> Specialties</a></li>
+        <li><a href="#our-projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#contact-us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    </ul>
+
+    <form action="#home" method="POST">
+        <button type="submit"><i class="fas fa-arrow-up"></i>Go Up</button>
+    </form>
+</div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        
+        <!-- Home Section -->
+        <div class="home-section" id="home">
+            <br><br><br><br><br><br>
+            <h1>AD<span class="link-span">JUS</span><span id="username"><br><br>Developers .NET</span></h1>
+            <br><br><br>
+            <h2 class="bio">Advanced Digital Journeys & Unified Solutions (ADJUS)</h2>
+            <br><br><br>
+            <button class="action-btn"><a href="#contact-us">Explore Web</a></button>
+        </div>
+
+        <!-- About Us Section -->
+    <div class="about-section" id="about">
+    <br><br><br>
+    <h2>About Us</h2>
+    <p class ="about-info">ADJUS (Advanced Digital Journeys & Unified Solutions) specializes in delivering innovative digital transformation services with a strong focus on .NET development. We provide custom software, cloud solutions, and system integrations to help businesses create seamless, unified platforms and enhance digital experiences. With a vision to lead in the digital space, ADJUS helps organizations streamline operations, improve efficiency, and stay competitive in an increasingly digital world. </p>
+    <div class="about-container">
+        <div class="container container-one">
+            <br><br>
+            <h3>Our Mission</h3>
+            <br>
+            <p>At ADJUS, our mission is to empower businesses with advanced, scalable, and user-centric web solutions, with a strong focus on .NET development. We are dedicated to crafting custom websites that elevate online experiences, boost engagement, and drive conversions. <br>By staying ahead of technology trends, we ensure our clients receive exceptional, tailored services that meet their unique needs.</p>
+        </div>
+        <div class="container container-two">
+            <br><br>
+            <h3>Our Vision</h3>
+            <br>
+            <p>We aim to be the world’s most trusted and respected web development partner, known for our commitment to excellence, creativity, and customer satisfaction. Our vision is to bridge the gap between businesses and their digital presence by offering solutions that are both technically sophisticated and user-centered. Our goal is to help organizations grow by providing them with a robust online platform that delivers measurable results.</p>
+        </div>
+        <div class="container container-three">
+            <br><br>
+            <h3>Our Values</h3>
+            <br>
+            <p>We believe in the following core values, which guide our operations and interactions with clients:
+<br>
+Innovation: We constantly push the boundaries of technology to offer creative and forward-thinking solutions that help our clients stay ahead in their industries.
+<br>
+Quality: We are committed to delivering the highest quality in everything we do, from design and development to customer support.
+        </div>
+    </div>
+</div>
+
+        <!-- Specialised In Section -->
+        <div class="Specialties" id="Specialties">
+        <br><br><br>
+    <h2>Our Specialties</h2>
+    <p>We specialize in web development, including front-end and back-end solutions, DBMS systems, e-commerce websites, and web systems.</p>
+
+    <div class="specialties-container">
+        <div class="specialty-item">
+            <h3>Front-End Development</h3>
+            <p>Crafting visually appealing and responsive user interfaces.</p>
+            <p>Expertise in HTML, CSS, JavaScript, AJAX and modern frameworks like ASP.Net</p>
+            <p>Focus on user experience (UX) and accessibility compliance.</p>
+        </div>
+        <div class="specialty-item">
+            <h3>Back-End Development</h3>
+            <p>Building robust server-side logic and database management.</p>
+            <p>Proficiency in languages such as C# and PHP </p>
+            <p>Integration of APIs and third-party services.</p>
+            <a href="front-end.html" class="specialties-btn">View More</a>
+        </div>
+    </div>
+</div>
+
+
+       <!-- Projects Section -->
+<div class="projects-section" id="our-projects">
+    <h2>Our Projects</h2>
+    <p>Take a look at some of our successful projects and clients.</p>
+
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="PaySheet.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3>PaySheet</h3>
+                <p>
+                Electronic PaySheet is a web-based software program seamlessly integrated with the E - Pay Wallet mobile wallet system. It allows companies to process employee payments automatically with just a single button click. This solution streamlines payroll management, ensuring secure and efficient payment transfers to employees' mobile wallet accounts, reducing manual intervention and ensuring timely, accurate payments.</p>
+                <a href="project-details1.html" class="btn project-btn">Explore</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="EPayWallet.png" alt="Project 2" class="project-image">
+            <div class="project-info">
+                <h3>E - Pay Wallet</h3>
+                <p>E-Pay Wallet is a mobile wallet system integrated with the Electronic PaySheet, designed to handle various financial transactions like mobile payments through the PaySheet web application. <br>The system also connects with the E-Pay Wallet mobile app, allowing users to access their accounts for cash transfers, withdrawals, bill payments, and forex trading.</p>
+                <a href="project-details2.html" class="btn project-btn">Explore</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="original-0a09207ae62dc15190df7954b09f9821.jpg" alt="Project 3" class="project-image">
+            <div class="project-info">
+                <h3>E - Pay Wallet Mobile App</h3>
+                <p>E - Pay Wallet Mobile App enables employees to receive payments directly into their wallet accounts. This secure and user-friendly app allows users to manage their digital wallet, supporting mobile payments, money transfers, bill payments, cash withdrawals, and forex trading. Integrated with the Electronic PaySheet system, it automates employee payments, providing a seamless financial experience.</p>
+                <a href="project-details3.html" class="btn project-btn">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact-section" id="contact-us">
+    <h2>WEB CONTACTING</h2>
+    <br>
+    <p>If you would like to work with us or have any questions, feel free to reach out!</p>
+    <br>
+    <p>Our client support team will be happy to assist you 24/7.</p>
+    <br>
+    <div class="button-container">
+    <a href="https://wa.me/27672911605?text=I%20want%20to%20start%20a%20video%20call" target="_blank" class="btn video-btn">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://www.facebook.com/adjusdevelopers/" target="_blank" class="btn facebook-btn">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="mailto:your-email@gmail.com" target="_blank" class="btn email-btn">
+        <i class="fas fa-envelope"></i> Email
+    </a> </div>
+    <br><br>
+</div>
+</div>
+<script>
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+        } else {
+            sidebar.style.display = 'block';
+        }
+    }
+</script>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Social Media Links -->
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/adjusdevelopers/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#Specialties">Specialties</a></li>
+                <li><a href="#our-projects">Projects</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Subscription Section -->
+        <div class="footer-column">
+            <h3>Subscribe</h3>
+            <p>Get the latest updates from us.</p>
+            <br>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                 <br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ADJUS Developers. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
