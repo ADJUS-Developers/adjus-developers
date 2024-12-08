@@ -1,3 +1,23 @@
+<?php
+// Hardcoded credentials
+$valid_email = "admin@gmail.com";
+$valid_password = "admin"; // In a real application, use hashed passwords
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Capture form data
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Check if credentials match
+    if ($email === $valid_email && $password === $valid_password) {
+        // Redirect to another page on successful login
+        header("Location: dashboard.html"); // Replace with your desired redirect page
+        exit(); // Make sure to exit to avoid further script execution
+    } else {
+        echo "<h3>Invalid credentials, please try again.</h3>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
