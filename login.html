@@ -1,7 +1,9 @@
 <?php
-// Hardcoded credentials
+// Hardcoded credentials for simplicity
 $valid_email = "admin@gmail.com";
-$valid_password = "admin"; // In a real application, use hashed passwords
+$valid_password = "admin"; // In a real-world application, use hashed passwords
+
+$error_message = ''; // Variable to store error message
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Capture form data
@@ -11,28 +13,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Check if credentials match
     if ($email === $valid_email && $password === $valid_password) {
         // Redirect to another page on successful login
-        header("Location: dashboard.html"); // Replace with your desired redirect page
-        exit(); // Make sure to exit to avoid further script execution
+        header("Location: dashboard.php"); // Redirect to your dashboard
+        exit();
     } else {
-        echo "<h3>Invalid credentials, please try again.</h3>";
+        // Set error message if credentials are invalid
+        $error_message = "Invalid credentials, please try again.";
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
-        <form action="login.php" method="POST" class="login-form">
+        <form action="login.php" method="POST">
             <h2>Login</h2>
+            
+            <!-- Input fields for email and password -->
             <input type="email" name="email" placeholder="Enter your email" required>
             <input type="password" name="password" placeholder="Enter your password" required>
-            <button type="submit" class="login-btn">Login</button>
+
+            <!-- Login Button -->
+            <button type="submit">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+            
+            <!-- Display error message below the login button -->
+            <?php if ($error_message): ?>
+                <p class="error-message"><?php echo $error_message; ?></p>
+            <?php endif; ?>
         </form>
     </div>
 </body>
